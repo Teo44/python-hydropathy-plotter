@@ -1,5 +1,7 @@
 # python-hydropathy-plotter
 
+A Python tool to generate simple hydrophilicity plots from amino acid sequences.
+
 ## Installation
 
 Enter a virtual Python environment
