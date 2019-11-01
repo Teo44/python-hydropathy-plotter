@@ -22,3 +22,16 @@ def parse(seq, window_size):
         scores.append(score)
 
     return scores;
+
+def fasta_parse(file):
+    lines = file.readlines()
+    seq = ''
+
+    for i in range(len(lines)):
+        if lines[i][0] != '>' and lines[i][0] != ';':
+            seq += lines[i]
+    
+    seq = seq.replace('\r', '').replace('\n', '')
+
+    return seq
+
